@@ -1,0 +1,49 @@
+open Git Bash app
+
+pwd -- to check the current directory
+
+ls --- to get the list of directories and folders in the present working directory (pwd)
+
+cd <dir name> or<path of the directory> --- to change to that directory
+
+vi <file_name> -- to open a file in editor
+
+shift+i -- to edit the file.. we should use this after opening the file using vi <file_name>
+
+after making the changes in the file.. click 'esc' button to come out of the insert mode
+
+:w --- to save changes in the file, after coming out of the insert mode
+
+:q-- to exit from vi . 
+
+:wq -- to save changes and exit from vi editor. 
+
+git clone <url given in pdf>
+
+git status -- gives status of all the files in the pwd.-- we can see all the files that are modified. 
+
+git add <file_name 1> <file_name2> ... adds all the files which were found modified in the 'git status ' output..  to the staging area.
+
+git add . --- dot add all the modified files.. instead of using seperate file names as given above  
+
+git status -- to check if the files are added to the stage area.. we can see files to be commited.. 
+
+git commit -m "any message" -- this is to commit all the files to the local repository 
+
+If there is any error while commiting , like permissions error.. we should config our git hub user name and email id as below
+
+git config user.email "your git hub email id"
+
+git config user.name "your git hub user name "
+
+-- after this commit the changes again .. using git commit -m  "any message"
+
+-- create an empty repository in git hub, and get the https url from the page.
+
+-- Now add our local repository to the empty git hub repository.
+
+ git remote add <empty repository name> <empty repository url>
+
+-- Now push all the files from our local sytem to the empty repository .
+
+git push -u <empty repository name> 
